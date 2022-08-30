@@ -7,6 +7,7 @@
     --bcg-color: #FFFFFF;
     --bcgsecond-color: #F5F4FA;
     --bcgthird: #2F303A; 
+    --icon-color:#AFB1B8; 
 }
     
 body{
@@ -91,6 +92,9 @@ ul {
 }
 .contact-us{
     margin-right:50px;
+    display: flex;
+    justify-content: baseline;
+    align-item: center;
 }
 .email-phone .contacts {
     color: var(--main-text-color);
@@ -103,15 +107,23 @@ ul {
 .email-phone .contacts:focus {
     color: var(--accent-color);
 }
-.envelop{
+.envelop {
     margin-right: 10px;
-    fill: #757575;
-    background-color: #2196F3;
+    fill: var(--main-text-color);
+}
+.envelop:hover,
+.envelop:focus {
+    fill: var(--accent-color);
 }
 .smartphone{
     margin-right: 10px;
-    background-color: #2196F3;
+    fill: var(--main-text-color);
 }
+.smartphone:hover,
+.smartphone:focus {
+    fill: var(--accent-color);
+}
+
     /* HERO */
 
 .hero {
@@ -258,12 +270,31 @@ justify-content: space-between;
     color: var(--headlines-title);
 }
 .team-profession{
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19; 
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+}
+.social-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px 30px 32px;
+    align-items: center;
+    gap: 10px;
+}
+.social-link{
+    max-width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color:var(--bcg-color);
+    fill:var(--icon-color);
+}
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+    fill: var(--bcg-color);
 }
 /*  OUR CLIENTS */
 .clients-label{
