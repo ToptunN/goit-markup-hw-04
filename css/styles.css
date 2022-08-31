@@ -125,7 +125,6 @@ ul {
    padding-top: 200px;
    padding-bottom: 200px;
 }
-/* Не працює градієнт. Чому? */
 .overlay{
     max-width: 1600px;
     height: 600px;
@@ -201,9 +200,11 @@ justify-content: space-between;
     letter-spacing: 0.03em;
 }
 .icons-bg-settings {
-    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
     height: 120px;
-    padding: 25px 100px;
     margin-bottom: 30px;
     background-color: var(--bcgsecond-color);
     border-radius: 4px;
@@ -265,6 +266,7 @@ justify-content: space-between;
     color: var(--headlines-title);
 }
 .team-profession{
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19; 
     text-align: center;
@@ -273,10 +275,10 @@ justify-content: space-between;
 }
 .social-flex{
     display: flex;
-    justify-content: space-between;
-    padding: 16px 32px 30px 32px;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 30px;
 }
 .social-item{
     fill: var(--icon-color);
@@ -284,9 +286,9 @@ justify-content: space-between;
 .social-link{
     display:flex;
     justify-content: center;
+    align-items: center;
     max-width: 44px;
     height: 44px;
-    padding: 12px;
     border-radius: 50%;
     background-color:var(--bcg-color);
 }
@@ -402,11 +404,11 @@ footer .contacts-footer:focus {
     align-items: center;
     gap: 10px;
 }
+
 .footer-social-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
     max-width: 44px;
     height: 44px;
     border-radius: 50%;
