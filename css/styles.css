@@ -127,11 +127,10 @@ ul {
 }
 .overlay{
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
-    background-image: url(../images/index.photos/hero-bcg.jpg),linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/index.photos/hero-bcg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -278,7 +277,7 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .social-item{
     fill: var(--icon-color);
@@ -322,9 +321,8 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 170px;
+    width: 170px;
     height:92px;
-    padding: 16px 32px;
     border:1px solid var(--icon-color);
     border-radius: 4px;  
 }
@@ -486,10 +484,15 @@ footer .contacts-footer:focus {
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
-.works-item:hover,
-.works-item:focus{
+
+.works-link{
+    display: block;
+}
+.works-link:hover,
+.works-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 
 
 
